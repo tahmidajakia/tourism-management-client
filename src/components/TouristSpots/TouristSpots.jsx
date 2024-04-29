@@ -9,8 +9,8 @@ const TouristSpots = () => {
 
     const spots = useLoaderData();
     return (
-        <div>
-            <h1 className="text-center text-4xl mt-12 mb-10">This is tourist sport section: {spots.length}</h1>
+        <div className="bg-teal-50 pl-6 pr-6 rounded-2xl ">
+            <h1 className="text-center font-bold text-4xl mt-20 mb-10 pt-10">This is tourist sport section: {spots.length}</h1>
             <div className="grid md:grid-cols-3 gap-10">
             {
                 spots.slice(0,dataLength).map(spot => <TouristSpotCard
@@ -21,7 +21,7 @@ const TouristSpots = () => {
             </div>
             <div className="flex justify-center mt-14">
                 <Link to='/alltouristspot'>
-                <button className="btn">Show all</button>
+                <button className="btn bg-teal-400 text-white mb-8">Show all</button>
                 </Link>
             </div>
         </div>

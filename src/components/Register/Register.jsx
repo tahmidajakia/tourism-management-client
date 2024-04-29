@@ -60,10 +60,10 @@ const Register = () => {
   }
     return (
         <div>
-       <div className="text-center text-3xl mt-10 mb-16 font-semibold text-green-600">
+       <div className="text-center text-3xl mt-10 mb-16 font-semibold text-teal-900">
        <h1 className="text-3xl font-bold"> Please Register</h1>
        </div>
-        <div className="flex justify-center items-center shadow-2xl bg-green-100 w-1/2 mx-auto">
+        <div className="flex justify-center items-center shadow-2xl bg-teal-100 w-1/2 mx-auto">
       <form onSubmit={handleRegister}  className="card-body ">
         <div className="form-control">
           <label className="label">
@@ -94,9 +94,9 @@ const Register = () => {
           </label>
         </div>
         <div className="form-control mt-6">
-          <button className="btn bg-green-800 text-white">Register</button>
+          <button className="btn bg-teal-900 text-white">Register</button>
         </div>
-        <h1 className="mt-10">Already have an account <Link className="text-green-800 font-bold" to='/login'>Login</Link></h1>
+        <h1 className="mt-10">Already have an account <Link className="text-teal-800 font-bold" to='/login'>Login</Link></h1>
       </form>
       
     </div>

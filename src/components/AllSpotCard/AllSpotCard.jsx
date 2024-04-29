@@ -11,7 +11,7 @@ const AllSpotCard = ({spots}) => {
         <p></p>
         <div className="card-actions justify-center mb-5">
         <Link to={`/details/${_id}`}>
-      <button className="btn btn-primary ">View Details</button>
+      <button className="btn bg-teal-500 text-white ">View Details</button>
       </Link>
         </div>
       </div>

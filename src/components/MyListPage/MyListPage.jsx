@@ -1,10 +1,44 @@
 import { useContext, useEffect, useState } from "react";
 import { AuthContexts } from "../Providers/AuthProviders";
+import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 
 
 const MyListPage = () => {
     const [item,setItem] = useState([]);
     const {user} = useContext(AuthContexts);
+
+    const handleDelete = _id =>{
+        console.log(_id);
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+          }).then((result) => {
+            if (result.isConfirmed) {
+             
+           fetch(`http://localhost:5000/spot/${_id}`,{
+            method:'DELETE'
+           })
+           .then(res => res.json())
+           .then(data => {
+            console.log(data);
+            if(data.deletedCount){
+                Swal.fire({
+                    title: "Deleted!",
+                    text: "Your file has been deleted.",
+                    icon: "success"
+                  });
+                
+            }
+           })
+            }
+          });
+    }
 
     useEffect(() => {
         fetch(`http://localhost:5000/myList/${user?.email}`)
@@ -42,8 +76,10 @@ const MyListPage = () => {
         <td>{p.country_name}</td>
         <td>{p.location}</td>
         <td>{p.tourist_spot_name}</td>
-        <button className="btn mr-6">Update</button>
-        <button className="btn">Delete</button>
+        <Link to={`/updateList/${p._id}`}>
+        <button className="border mr-2 p-3 rounded-lg border-teal-500 bg-teal-600 text-white">Update</button>
+        </Link>
+        <button onClick={() => handleDelete(p._id)} className="border mr-2 p-3 rounded-lg border-teal-600 text-teal-600 ">Delete</button>
       </tr>
     </tbody>
   </table>

@@ -7,7 +7,8 @@ const TouristSpotCard = ({spot}) => {
 
 
     return (
-        <div className="card card-compact  bg-base-100 shadow-xl">
+        <div>
+          <div className="card card-compact  bg-base-100 shadow-xl">
   <figure><img src={photo} alt="Shoes" /></figure>
   
   <div className="card-body ">
@@ -15,11 +16,12 @@ const TouristSpotCard = ({spot}) => {
     <p></p>
     <div className="card-actions justify-center mb-5">
       <Link to={`details/${_id}`}>
-      <button className="btn btn-primary ">View Details</button>
+      <button className="btn bg-teal-400 text-white ">View Details</button>
       </Link>
     </div>
   </div>
 </div>
+        </div>
     );
 };
 

@@ -17,11 +17,11 @@ const Navbar = () => {
 
 
     const navLinks = <>
-        <button className="btn bg-green-600 text-white"><NavLink to='/'>Home</NavLink></button>
-        <button className="ml-3 btn bg-green-600 text-white"><NavLink to='/alltouristspot'>All Tourists Spot</NavLink></button>
-        <button className="ml-3 btn bg-green-600 text-white"><NavLink to='/addtouristspot'>Add Tourists Spot</NavLink></button>
-        <button className="ml-3 btn bg-green-600 text-white"><NavLink to='/mylist'> My List</NavLink></button>
-        <button className="ml-3 btn bg-green-600 text-white"><NavLink to='/contactus'>Contact Us</NavLink></button>
+        <button className="border mr-3 p-3 rounded-lg border-teal-500 text-teal-400"><NavLink to='/'>Home</NavLink></button>
+        <button className="border mr-3 p-3 rounded-lg border-teal-500 text-teal-400"><NavLink to='/alltouristspot'>All Tourists Spot</NavLink></button>
+        <button className="border mr-3 p-3 rounded-lg border-teal-500 text-teal-400"><NavLink to='/addtouristspot'>Add Tourists Spot</NavLink></button>
+        <button  className="border mr-3 p-3 rounded-lg border-teal-500 text-teal-400"><NavLink to='/mylist'> My List</NavLink></button>
+        <button  className="border p-3 rounded-lg border-teal-500 text-teal-400"><NavLink to='/contactus'>Contact Us</NavLink></button>
        
         
     </>
@@ -66,7 +66,7 @@ const Navbar = () => {
         <button onClick={handleSignOut} className="btn">Sign Out</button>
         :
         <Link to='/login' >
-     <button className="btn">Login</button>
+     <button className="border mr-3 p-3 rounded-lg border-teal-500 text-teal-400">Login</button>
     
     </Link>
       }
@@ -77,11 +77,11 @@ const Navbar = () => {
       :
       <Link to='/login' >
      
-    <button className="btn">Login</button>
+    <button className="border mr-2 p-3 rounded-lg border-teal-500 text-teal-400">Login</button>
     </Link>
     }
      <Link to='/register'>
-    <button className="btn ml-3 bg-green-600 text-white">Register</button>
+    <button className="btn ml-3 bg-teal-300 text-white">Register</button>
     </Link>
 
 

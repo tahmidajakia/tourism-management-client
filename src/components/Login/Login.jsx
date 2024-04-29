@@ -32,7 +32,7 @@ const Login = () => {
   }
     return (
         <div>
-       <div className="text-center text-3xl mt-10 mb-8 font-semibold text-green-800">
+       <div className="text-center text-3xl mt-10 mb-8 font-semibold text-teal-800">
        <h1 className="text-3xl font-bold" > Please Login</h1>
        </div>
         <div className="flex justify-center items-center shadow-2xl bg-green-100 w-1/2 mx-auto">
@@ -53,9 +53,9 @@ const Login = () => {
           </label>
         </div>
         <div className="form-control mt-6">
-          <button className="btn bg-green-800 text-white">Login</button>
+          <button className="btn bg-teal-800 text-white">Login</button>
         </div>
-        <h1 className="mt-10">Do not have an account <Link className="text-green-800 font-bold" to='/register'>Register</Link></h1>
+        <h1 className="mt-10">Do not have an account <Link className="text-teal-800 font-bold" to='/register'>Register</Link></h1>
       </form>
     </div>
     </div>

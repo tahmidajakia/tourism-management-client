@@ -32,29 +32,30 @@ const Header = () => {
                 >
                     <SwiperSlide>
                         <div  className=" bg-gradient-to-r from-cyan-500 to-blue-500 h-[600px] bg-no-repeat bg-cover rounded-xl" style= {{backgroundImage:` linear-gradient(#0E1C26B3,#557C934D), url(${hero1})`}}>
+                        <h2  className="text-white text-6xl font-bold text-center pt-56">Never Stop Exploring </h2>
+                        <h2  className="text-white p-4 text-6xl font-bold text-center ">The World </h2>
+                        
 
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div  className=" bg-gradient-to-r from-cyan-500 to-blue-500 h-[600px] bg-no-repeat bg-cover rounded-xl" style= {{backgroundImage:` linear-gradient(#0E1C26B3,#557C934D), url(${hero2})`}}>
+                        <h2  className="text-white text-6xl font-bold text-center pt-56">Never Stop Exploring </h2>
+                        <h2  className="text-white p-4 text-6xl font-bold text-center ">The World </h2>
 
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div  className=" bg-gradient-to-r from-cyan-500 to-blue-500 h-[600px] bg-no-repeat bg-cover rounded-xl" style= {{backgroundImage:` linear-gradient(#0E1C26B3,#557C934D), url(${hero3})`}}>
+                        <h2  className="text-white text-6xl font-bold text-center pt-56">Never Stop Exploring </h2>
+                        <h2  className="text-white p-4 text-6xl font-bold text-center ">The World </h2>
 
                         </div>
                     </SwiperSlide>
                 </Swiper>
             </div>
         </div>
-//         <div className=" bg-gradient-to-r from-cyan-500 to-blue-500 h-[600px] bg-no-repeat bg-cover rounded-xl" style= {{backgroundImage:` linear-gradient(#0E1C26B3,#557C934D), url(${house1})`}}>
 
-//         <h2 data-aos="fade-left" data-aos-delay="1000" className="text-white text-6xl font-bold text-center pt-56">The Best Way <br /> To know the world</h2>
-//         <Link data-aos="fade-right" data-aos-delay="2000"  className=" flex justify-center text-center mx-auto w-1/4 border border-white p-4 text-2xl font-semibold  text-white mt-6 ">Register now</Link>
-        
-
-// </div>
 
     );
 };

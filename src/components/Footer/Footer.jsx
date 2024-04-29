@@ -5,7 +5,7 @@ import logo from '../../assets/logo1.png'
 const Footer = () => {
     return (
         <div className="mt-16">
-            <footer className="footer p-10 bg-base-200 text-base-content">
+            <footer className="footer p-10 bg-teal-700 text-base-content text-white">
   <nav>
     <h6 className="footer-title">Services</h6> 
     <a className="link link-hover">Branding</a>
@@ -27,7 +27,7 @@ const Footer = () => {
     <a className="link link-hover">Cookie policy</a>
   </nav>
 </footer> 
-<footer className="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
+<footer className="footer px-10 py-4 border-t bg-teal-700 text-base-content bg-teal-700 text-white">
   <aside className="items-center grid-flow-col">
     <Link><img className="w-1/2" src={logo} alt="" /></Link>
     <p>Travelo  Ltd. <br/>Providing reliable tech since 1992</p>
