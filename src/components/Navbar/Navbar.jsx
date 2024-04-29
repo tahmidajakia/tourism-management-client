@@ -19,9 +19,12 @@ const Navbar = () => {
     const navLinks = <>
         <button className="border mr-3 p-3 rounded-lg border-teal-500 text-teal-400"><NavLink to='/'>Home</NavLink></button>
         <button className="border mr-3 p-3 rounded-lg border-teal-500 text-teal-400"><NavLink to='/alltouristspot'>All Tourists Spot</NavLink></button>
-        <button className="border mr-3 p-3 rounded-lg border-teal-500 text-teal-400"><NavLink to='/addtouristspot'>Add Tourists Spot</NavLink></button>
-        <button  className="border mr-3 p-3 rounded-lg border-teal-500 text-teal-400"><NavLink to='/mylist'> My List</NavLink></button>
-        <button  className="border p-3 rounded-lg border-teal-500 text-teal-400"><NavLink to='/contactus'>Contact Us</NavLink></button>
+        <button className="border mr-3  p-3 rounded-lg border-teal-500 text-teal-400"><NavLink to='/addtouristspot'>Add Tourists Spot</NavLink></button>
+        <button  className="border mr-3 p-3 rounded-lg border-teal-500 text-teal-400"><NavLink to='/contactus'>Contact Us</NavLink></button>
+        { user && <>
+
+          <button  className="border mr-3 p-3 rounded-lg border-teal-500 text-teal-400"><NavLink to='/mylist'> My List</NavLink></button>
+        </>}
        
         
     </>
