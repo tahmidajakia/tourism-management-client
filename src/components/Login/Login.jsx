@@ -9,7 +9,7 @@ const Login = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const {signIn,signInWithGoogle} = useContext(AuthContexts);
+  const {signIn,signInWithGoogle,signInWithGithub} = useContext(AuthContexts);
 
   
 
@@ -33,6 +33,15 @@ const Login = () => {
   }
   const handleGoogleSignIn = () => {
     signInWithGoogle()
+    .then(result => {
+      console.log(result.user);
+    })
+    .catch(error =>{
+      console.error(error);
+    })
+  }
+  const handleGithubSignIn = () => {
+    signInWithGithub()
     .then(result => {
       console.log(result.user);
     })
@@ -66,9 +75,14 @@ const Login = () => {
           <button className="btn bg-teal-800 text-white">Login</button>
         </div>
         <h1 className="mt-10">Do not have an account <Link className="text-teal-800 font-bold" to='/register'>Register</Link></h1>
+        <div className="flex">
         <p>
           <button onClick={handleGoogleSignIn} className="bg-teal-800 text-white p-3 rounded-lg">Google</button>
         </p>
+        <p>
+          <button onClick={handleGithubSignIn} className="bg-teal-800 text-white p-3 rounded-lg">Github</button>
+        </p>
+        </div>
       </form>
     </div>
     </div>
