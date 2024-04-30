@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
 
-const MyListPage = () => {
+const MyListPage = ({setAllSpot,allSpot}) => {
+
+  
     const [item,setItem] = useState([]);
     const {user} = useContext(AuthContexts);
 
@@ -33,6 +35,8 @@ const MyListPage = () => {
                     text: "Your file has been deleted.",
                     icon: "success"
                   });
+                  const remaining = allSpot.filter(spo => spo._id !== _id)
+                  setAllSpot(remaining);
                 
             }
            })
