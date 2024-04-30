@@ -9,7 +9,7 @@ const AllTouristSpot = () => {
     const [allSpot,setAllSpot] = useState(loadedAllSpot)
     return (
         <div>
-            <h1>this is all tourist spot : {allSpot.length}</h1>
+            <h1 className="text-center font-bold text-4xl mt-8">All Tourist Spot</h1>
             <div className="grid md:grid-cols-3 gap-5 mt-10 mb-10">
                 {
                     allSpot.map(spots => <AllSpotCard
