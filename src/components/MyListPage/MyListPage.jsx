@@ -53,7 +53,7 @@ const MyListPage = ({setAllSpot,allSpot}) => {
     },[user])
     return (
         <div>
-            <h1>My List:</h1>
+            <h1 className="text-center font-bold text-4xl mt-10 text-teal-600">My List</h1>
             
             {
                 item?.map(p => (
