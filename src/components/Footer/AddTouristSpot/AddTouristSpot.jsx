@@ -53,7 +53,7 @@ const AddTouristSpot = () => {
     }
     return (
         <div>
-       <div className="text-center text-3xl mt-10 mb-8 font-semibold text-green-800">
+       <div className="text-center text-3xl mt-10 mb-8 font-semibold text-teal-800">
        <h1 className="text-3xl font-bold" >Add Tourist Spot</h1>
        </div>
         <div className="flex justify-center items-center shadow-2xl bg-green-100 w-1/2 mx-auto">
@@ -139,7 +139,7 @@ const AddTouristSpot = () => {
           </div>
         </div>
         <div className="form-control mt-6">
-          <button className="btn bg-green-800 text-white">Add</button>
+          <button className="btn bg-teal-800 text-white">Add</button>
         </div>
       </form>
     </div>
