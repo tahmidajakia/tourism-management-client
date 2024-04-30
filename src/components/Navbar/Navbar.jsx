@@ -35,7 +35,7 @@ const Navbar = () => {
 
 
     const navLinks = <>
-        <button className="border mr-3 p-3 rounded-lg border-teal-500 text-teal-400 font-bold"><NavLink to='/'>Home</NavLink></button>
+        <button className="border- mr-3 p-3 rounded-lg border-teal-500 text-teal-400 font-bold"><NavLink to='/'>Home</NavLink></button>
         <button className="border mr-3 p-3 rounded-lg border-teal-500 text-teal-400 font-bold"><NavLink to='/alltouristspot'>All Tourists Spot</NavLink></button>
         <button className="border mr-3  p-3 rounded-lg border-teal-500 text-teal-400 font-bold"><NavLink to='/addtouristspot'>Add Tourists Spot</NavLink></button>
         <button  className="border mr-3 p-3 font-bold rounded-lg border-teal-500 text-teal-400"><NavLink to='/contactus'>Contact Us</NavLink></button>
