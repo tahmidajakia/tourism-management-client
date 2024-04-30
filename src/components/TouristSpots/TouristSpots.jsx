@@ -10,7 +10,7 @@ const TouristSpots = () => {
     const spots = useLoaderData();
     return (
         <div className="bg-teal-50 pl-6 pr-6 rounded-2xl ">
-            <h1 className="text-center font-bold text-4xl mt-20 mb-10 pt-10">This is tourist sport section: {spots.length}</h1>
+            <h1 className="text-center font-bold text-5xl mt-20 mb-10 pt-10">This is tourist sport section</h1>
             <div className="grid md:grid-cols-3 gap-10">
             {
                 spots.slice(0,dataLength).map(spot => <TouristSpotCard
