@@ -3,7 +3,7 @@ import img1 from '../../assets/test1.jpg'
 const Testimonials = () => {
     return (
         <div>
-            <h1 className='text-center text-4xl font-semibold mt-12 mb-10'>What People say about us</h1>
+            <h1 className='text-center text-5xl font-semibold mt-12 mb-10'>What People say about us</h1>
             <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto text-center ">
                 <div className="bg-green-50 p-10 mx-auto space-y-5">
                    <div className='flex justify-center'>
